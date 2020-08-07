@@ -1,0 +1,139 @@
+html, body{
+    margin: 0;
+}
+header{
+    background-color: greenyellow;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    margin-left: 2%;
+}
+#menu{
+    float: right;
+    margin-right: 2%;
+    list-style: none;
+    margin-top: 0px;
+}
+li{
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover{
+    background-color: yellow;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#imagem_fundo{
+    background: url(img/balance-110850_1280.jpg);
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo{
+    color: black ;
+    padding-top: 25%;
+    text-shadow: white -2px 2px;
+    font-size: 60px;
+    line-height: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#subtitulo{
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-top: 3px solid yellowgreen;
+    text-shadow: white -1px 1px;
+}
+#acao{
+    color: black;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#acao:hover{
+    background-color: yellow;
+}
+.icone{
+    width: 51px;
+}
+section{
+    padding: 20px;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+}
+.destaque{
+    background-color: #f7f7f7;
+}
+.imgmetas{
+    width: 100%;
+    height: 30%;
+}
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+.colunadois{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+.colunatres{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+} 
+.colunaquatro{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+footer{
+    background-color: yellow;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 20%;  
+    font-family: 'Poppins', sans-serif;
+}
+@media all and (max-width: 768px){
+    #menu{
+        visibility: hidden;
+    }
+    .coluna, .colunadois, .colunatres, .colunaquatro{
+        display: block;   
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+        text-align: center;
+    }
+    #logodiv{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo {
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+}
